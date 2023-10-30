@@ -57,7 +57,7 @@ class Cell:
             self.cell_btn_object.configure(bg="orange")
             self.is_mine_flag = True
         else:
-            self.cell_btn_object.configure(bg="orange")
+            self.cell_btn_object.configure(bg="white")
             self.is_mine_flag = False
 
     def show_mine(self):

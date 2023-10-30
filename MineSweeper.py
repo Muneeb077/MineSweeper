@@ -19,7 +19,7 @@ game_title = Label(top_frame, bg="grey", fg="black",
                    text = "MineSweeper Game",
                    font = ('', 40)
                    )
-game_title.place(x=new.width_prct(32),y=new.height_prct(3))
+game_title.place(x=new.width_prct(32),y=new.height_prct(2))
 
 board_frame = Frame(root, bg= "#5D6D7E",
                     width = new.width_prct(75),
@@ -35,8 +35,8 @@ for x in range(configure.GRID_SIZE):
 
 Cell.cell_count_label(top_frame)
 Cell.cell_count_label_object.place(
-    x = new.width_prct(42),
-    y = new.height_prct(15)
+    x = new.width_prct(40),
+    y = new.height_prct(10)
 )
 
 Cell.random_mines()
