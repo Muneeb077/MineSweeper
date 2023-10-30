@@ -25,7 +25,7 @@ class Cell:
         # Create a button object for the cell and bind mouse click events
         btn = Button(
             location,
-            width = 2,
+            width = 8,
             height = 2,
         )
         btn.bind('<Button-1>', self.left_click) # Bind left-click event
@@ -119,7 +119,7 @@ class Cell:
             if Cell.cell_count_label_object:
                 Cell.cell_count_label_object.configure(text = f"Cells Left: {Cell.cell_count}")
 
-            self.cell_btn_object.configure(bg = "black")
+            self.cell_btn_object.configure(bg = "white")
 
         self.is_open = True
 

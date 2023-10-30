@@ -9,7 +9,7 @@ root = Tk()
 root.configure(bg="lightgrey")  # Set background color
 root.geometry(f'{configure.WIDTH}x{configure.HEIGHT}')  # Set window size
 root.title("Minesweeper")  # Set the title of the game
-root.resizable(True, True)  # Make the window non-resizable
+root.resizable(True, False)  # Make the window non-resizable
 
 # Create the top frame for the game's title
 top_frame = Frame(root, bg="grey",
@@ -22,13 +22,13 @@ game_title = Label(top_frame, bg="grey", fg="black",
                    text="MineSweeper Game",
                    font=('', 40)
                    )
-game_title.place(x=new.width_prct(32), y=new.height_prct(2))
+game_title.place(x=new.width_prct(28), y=new.height_prct(0))
 
 # Create the main game board frame
 board_frame = Frame(root, bg="#5D6D7E",
                     width=new.width_prct(75),
                     height=new.height_prct(75))
-board_frame.place(x=new.width_prct(12), y=new.height_prct(20))
+board_frame.place(x=new.width_prct(10), y=new.height_prct(20))
 
 # Create a grid of cells using nested loops
 for x in range(configure.GRID_SIZE):
@@ -41,7 +41,7 @@ for x in range(configure.GRID_SIZE):
 Cell.cell_count_label(top_frame)
 Cell.cell_count_label_object.place(
     x=new.width_prct(40),
-    y=new.height_prct(10)
+    y=new.height_prct(8)
 )
 
 # Initialize the game with random mines
