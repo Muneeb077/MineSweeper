@@ -53,7 +53,6 @@ class Cell:
         self.cell_btn_object.unbind("<Button-3>")
 
     def right_click(self,event):
-        print("you clicked right button")
         if not self.is_mine_flag:
             self.cell_btn_object.configure(bg="orange")
             self.is_mine_flag = True
