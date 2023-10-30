@@ -47,7 +47,7 @@ class Cell:
                     cell_obj.show_cell()
             self.show_cell()
             if Cell.cell_count == configure.MINES_COUNT:
-                messagebox.showerror("Error", "Congratulation you have won.")
+                messagebox.showerror("sucess", "Congratulation you have won.")
 
         self.cell_btn_object.unbind("<Button-1>")
         self.cell_btn_object.unbind("<Button-3>")
