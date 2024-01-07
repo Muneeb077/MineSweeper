@@ -1,5 +1,5 @@
 # Minesweeper Game
-<image src="Minesweerp_SS.jpeg">
+<image src="./Minesweerp_SS.jpeg">
 This is a classic Minesweeper game created using Python and the tkinter library. It's a simple yet challenging game where the player must uncover all non-mine cells to win. Be careful not to click on a mine!
 
 **Note: This game is optimized for Windows. The mouse click index may differ on macOS.**
